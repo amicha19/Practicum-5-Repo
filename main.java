@@ -14,13 +14,13 @@ class Main {
     // type matching
     var1 = 10;    
     var2 = 10.00;  
-    var3 = <operator>var2;  // var3 should be 10 (integer value)
+    var3 = (int)var2;  // var3 should be 10 (integer value)
 
     //complementary operations of mod and integer div
     // -- replace <operator> with the appropriate unary operator
     year = 2023;
-    two_digit_century = 2023 <operator> 100;  // should be assigned 20 (int)
-    two_digit_year = 2023 <operator> 100;  // should be assigned 23 (int)
+    two_digit_century = 2023 / 100;  // should be assigned 20 (int)
+    two_digit_year = 2023 % 100;  // should be assigned 23 (int)
     
     // mixed-type expressions
     // -- make any necessary changes to the operands below
